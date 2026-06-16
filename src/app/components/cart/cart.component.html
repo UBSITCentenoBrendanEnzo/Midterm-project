@@ -16,6 +16,7 @@
     Cart is empty
     </h2>
     
+    
     <p>
     Add some Pokemon items first!
     </p>
@@ -39,7 +40,7 @@
     <div class="cart-item">
     
     
-    <img 
+    <img
     [src]="item.image"
     >
     
@@ -53,9 +54,11 @@
     </h2>
     
     
+    
     <p>
     Type: {{item.type}}
     </p>
+    
     
     
     <p class="price">
@@ -63,17 +66,14 @@
     </p>
     
     
-    
     </div>
     
     
     
     </div>
-    
     
     
     }
-    
     
     
     
@@ -92,13 +92,35 @@
     
     
     
+    <div class="cart-buttons">
+    
+    
+    
     <button
+    class="purchase"
+    (click)="purchase()"
+    >
+    
+    Purchase
+    
+    </button>
+    
+    
+    
+    
+    <button
+    class="clear"
     (click)="clear()"
     >
     
     Clear Cart
     
     </button>
+    
+    
+    
+    </div>
+    
     
     
     </div>

@@ -25,5 +25,15 @@ clear(){
 
 }
 
+purchase(){
+
+  alert(
+  "Purchase successful! Thank you Trainer!"
+  );
+  
+  
+  this.shop.clearCart();
+  
+  }
 
 }
